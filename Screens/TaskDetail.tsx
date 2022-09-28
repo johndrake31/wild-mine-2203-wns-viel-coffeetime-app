@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 export default function TaskDetail() {
-  return <View>This is a Task Detail page</View>;
+  return (
+    <View>
+      <Text>This is a Login page</Text>
+    </View>
+  );
 }
