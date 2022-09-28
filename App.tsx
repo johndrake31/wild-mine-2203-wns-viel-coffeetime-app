@@ -18,18 +18,18 @@ export default function App() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
+            let iconName='';
 
-            if (route.name === 'Images') {
+            if (route.name === 'Login') {
               iconName = focused
-                ? 'image'
-                : 'image-outline';
+                ? 'log-in'
+                : 'log-in-outline';
             } 
-            else if (route.name === 'Feed') {
-              iconName = focused ? 'share-social' : 'share-social-outline';
+            else if (route.name === 'Task') {
+              iconName = focused ? 'ticket' : 'ticket-outline';
             }
-            else if (route.name === 'Camera') {
-              iconName = focused ? 'camera' : 'camera-outline';
+            else if (route.name === 'TaskDetail') {
+              iconName = focused ? 'chevron-down' : 'chevron-down-outline';
             }
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
