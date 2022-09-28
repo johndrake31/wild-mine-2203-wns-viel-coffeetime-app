@@ -1,4 +1,6 @@
-{
+import "dotenv/config";
+
+export default {
   "expo": {
     "name": "wild-mine-coffee-team-2022",
     "slug": "wild-mine-coffee-team-2022",
@@ -28,6 +30,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "api": process.env.api,
+    },
   }
 }
