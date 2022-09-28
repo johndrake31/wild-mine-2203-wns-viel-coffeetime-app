@@ -26,7 +26,7 @@ export default function App() {
                 : 'log-in-outline';
             } 
             else if (route.name === 'Task') {
-              iconName = focused ? 'ticket' : 'ticket-outline';
+              iconName = focused ? 'file-tray-full' : 'file-tray-full-outline';
             }
             else if (route.name === 'TaskDetail') {
               iconName = focused ? 'chevron-down' : 'chevron-down-outline';
@@ -40,13 +40,13 @@ export default function App() {
       
       >
         <Tab.Screen 
-        name="Camera" 
+        name="Login" 
         component={Login} 
-        options={{ unmountOnBlur: true }}
+        
         />
-        <Tab.Screen name="Images" component={Task}
+        <Tab.Screen name="Task" component={Task}
         options={{ unmountOnBlur: true }} />
-        <Tab.Screen name="Feed" component={TaskDetail} />
+        <Tab.Screen name="TaskDetail" component={TaskDetail} />
       </Tab.Navigator>
     </NavigationContainer>
   );
